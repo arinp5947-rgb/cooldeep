@@ -9,4 +9,4 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  VITE_API_URL = "https://cooldeep-production.up.railway.app"
+  VITE_API_URL = "https://upliftplacements-production.up.railway.app"
