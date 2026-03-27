@@ -13,7 +13,9 @@ async function submitContact(req, res) {
       'INSERT INTO contacts (name, email, phone, subject, message) VALUES ($1, $2, $3, $4, $5)',
       [name, email, phone, subject, message]
     )
-    await sendContactEmail({ name, email, phone, subject, message })
+    sendContactEmail({ name, email, phone, subject, message }).catch(err =>
+      console.error('Email error:', err.message)
+    )
     res.json({ success: true, message: 'Message sent successfully' })
   } catch (err) {
     console.error('Contact submit error:', err.message)
@@ -33,7 +35,9 @@ async function submitReferral(req, res) {
       'INSERT INTO referrals (referrer_name, referrer_email, referrer_phone, referee_name, referee_email, referee_phone) VALUES ($1, $2, $3, $4, $5, $6)',
       [referrerName, referrerEmail, referrerPhone, refereeName, refereeEmail, refereePhone]
     )
-    await sendReferralEmail({ referrerName, referrerEmail, referrerPhone, refereeName, refereeEmail, refereePhone })
+    sendReferralEmail({ referrerName, referrerEmail, referrerPhone, refereeName, refereeEmail, refereePhone }).catch(err =>
+      console.error('Referral email error:', err.message)
+    )
     res.json({ success: true, message: 'Referral submitted successfully' })
   } catch (err) {
     console.error('Referral submit error:', err.message)
