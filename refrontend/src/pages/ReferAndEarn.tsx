@@ -13,11 +13,12 @@ const ReferAndEarn = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: formData.referrerName,
-          email: formData.referrerEmail,
-          phone: formData.referrerPhone,
-          subject: 'Referral Submission',
-          message: `REFERRAL DETAILS:\n\nReferrer: ${formData.referrerName}\nReferrer Email: ${formData.referrerEmail}\nReferrer Phone: ${formData.referrerPhone}\n\nCandidate: ${formData.refereeName}\nCandidate Email: ${formData.refereeEmail}\nCandidate Phone: ${formData.refereePhone}`
+          referrerName: formData.referrerName,
+          referrerEmail: formData.referrerEmail,
+          referrerPhone: formData.referrerPhone,
+          refereeName: formData.refereeName,
+          refereeEmail: formData.refereeEmail,
+          refereePhone: formData.refereePhone
         })
       })
       
