@@ -9,7 +9,8 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_APP_PASSWORD
   },
   connectionTimeout: 10000,
-  greetingTimeout: 10000
+  greetingTimeout: 10000,
+  family: 4
 })
 
 async function sendContactEmail({ name, email, phone, subject, message }) {
