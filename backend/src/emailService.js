@@ -1,21 +1,10 @@
-const nodemailer = require('nodemailer')
+const { Resend } = require('resend')
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD
-  },
-  connectionTimeout: 10000,
-  greetingTimeout: 10000,
-  family: 4
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 async function sendContactEmail({ name, email, phone, subject, message }) {
-  await transporter.sendMail({
-    from: `"UP LIFT Placements" <${process.env.GMAIL_USER}>`,
+  await resend.emails.send({
+    from: 'UP LIFT Placements <onboarding@resend.dev>',
     to: process.env.GMAIL_USER,
     replyTo: email,
     subject: `New Contact Form: ${subject}`,
@@ -32,8 +21,8 @@ async function sendContactEmail({ name, email, phone, subject, message }) {
 }
 
 async function sendReferralEmail({ referrerName, referrerEmail, referrerPhone, refereeName, refereeEmail, refereePhone }) {
-  await transporter.sendMail({
-    from: `"UP LIFT Placements" <${process.env.GMAIL_USER}>`,
+  await resend.emails.send({
+    from: 'UP LIFT Placements <onboarding@resend.dev>',
     to: process.env.GMAIL_USER,
     replyTo: referrerEmail,
     subject: `New Referral from ${referrerName}`,
