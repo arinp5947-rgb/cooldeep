@@ -60,6 +60,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-[#2F3E2E] mb-2 text-sm sm:text-base">Phone</h3>
                   <p className="text-gray-700 text-sm sm:text-base">India: +91 96643 61260</p>
+                  <p className="text-gray-700 text-sm sm:text-base">India: +91 6355 015 108</p>
                   <p className="text-gray-700 text-sm sm:text-base">USA: +1 (212) 209-5095</p>
                 </div>
                 <div>
