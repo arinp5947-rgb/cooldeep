@@ -144,7 +144,7 @@ const Home = () => {
               <p className="text-[#FD6F2F] font-semibold mb-2 text-base">UpLift Placements</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#2F3E2E] mb-6">Services</h2>
               <p className="text-gray-600 mb-6 text-base leading-relaxed">UpLift Placements provides a holistic range of IT services. From job placement and career guidance to interview support, training, and staffing solutions, we're your partners in every step of your IT journey.</p>
-              <img src="/services.jpg" alt="Services" className="w-full rounded-lg shadow-lg" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none' }} />
+              <img src="/services.jpg" alt="Services" className="w-full rounded-lg shadow-lg" onError={(e) => { e.currentTarget.style.display = 'none' }} />
             </motion.div>
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               {services.map((service, index) => (
@@ -189,7 +189,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="/whatwedo1.jpg" alt="About Us" className="w-full max-w-md rounded-lg" loading="lazy" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop' }} />
+              <img src="/whatwedo1.jpg" alt="About Us" className="w-full max-w-md rounded-lg" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop' }} />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-gradient-to-br from-[#FFEAD1] to-white p-8 md:p-10 rounded-2xl">
               <p className="text-[#FD6F2F] font-semibold mb-2 text-base">What we do?</p>
