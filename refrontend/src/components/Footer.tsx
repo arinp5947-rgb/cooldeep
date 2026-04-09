@@ -10,14 +10,14 @@ const Footer = () => {
           <div>
             <img src="/images/logo.svg" alt="UP LIFT PLACEMENTS" className="h-12 mb-4" />
             <p className="text-gray-300 mb-4 text-sm leading-relaxed">
-              For the past two-plus years, UP LIFT PLACEMENTS LLC is a tech employment firm connecting candidates and clients.
+              For the past two-plus years, UpLift Placements LLC is a tech employment firm connecting candidates and clients.
             </p>
-            <p className="text-gray-400 text-xs mt-6">&copy; 2021 UP LIFT PLACEMENTS LLC. All rights reserved.</p>
+            <p className="text-gray-400 text-xs mt-6">&copy; 2021 UpLift Placements LLC. All rights reserved.</p>
             <div className="flex gap-4 mt-4">
-              <a href="https://www.linkedin.com/company/UP LIFT PLACEMENTS-placements" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
+              <a href="https://www.linkedin.com/company/uplift-placement/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/UP LIFT PLACEMENTS.placement" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
+              <a href="https://www.instagram.com/upliftplacements?igsh=MWVsOTBodjZrOTRqMg==" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
                 <Instagram size={20} />
               </a>
             </div>

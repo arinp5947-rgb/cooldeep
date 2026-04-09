@@ -49,7 +49,7 @@ const ReferAndEarn = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2F3E2E] mb-4">Turn Your Network Into Rewards</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Know someone looking for their next career opportunity? Refer them to UP LIFT PLACEMENTS and earn rewards when they get placed!
+              Know someone looking for their next career opportunity? Refer them to UpLift Placements and earn rewards when they get placed!
             </p>
           </div>
 
@@ -201,7 +201,7 @@ const ReferAndEarn = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-[#FD6F2F] mr-2">•</span>
-                <span>UP LIFT PLACEMENTS reserves the right to modify program terms at any time</span>
+                <span>UpLift Placements reserves the right to modify program terms at any time</span>
               </li>
             </ul>
           </div>

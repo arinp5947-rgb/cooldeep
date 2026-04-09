@@ -15,10 +15,10 @@ const Header = () => {
       <div className="bg-[#2F3E2E] text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
-            <a href="https://www.linkedin.com/company/UP LIFT PLACEMENTS-placements" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
+            <a href="https://www.linkedin.com/company/uplift-placement/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
               <Linkedin size={18} />
             </a>
-            <a href="https://www.instagram.com/UP LIFT PLACEMENTS.placement" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
+            <a href="https://www.instagram.com/upliftplacements?igsh=MWVsOTBodjZrOTRqMg==" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
               <Instagram size={18} />
             </a>
             <a href="mailto:service@upliftplacements.com" className="hover:text-[#FD6F2F] transition">
@@ -189,7 +189,7 @@ const Header = () => {
         <div className="space-y-6">
           <div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              For the past two-plus years, UP LIFT PLACEMENTS LLC is a tech employment firm connecting candidates and clients, facilitating access to job opportunities and the right talent.
+              For the past two-plus years, UpLift Placements LLC is a tech employment firm connecting candidates and clients, facilitating access to job opportunities and the right talent.
             </p>
           </div>
 
@@ -212,10 +212,10 @@ const Header = () => {
           </div>
 
           <div className="flex gap-4">
-            <a href="https://www.linkedin.com/company/UP LIFT PLACEMENTS-placements" target="_blank" rel="noopener noreferrer" className="text-[#515739] hover:text-[#FD6F2F] transition">
+            <a href="https://www.linkedin.com/company/uplift-placement/" target="_blank" rel="noopener noreferrer" className="text-[#515739] hover:text-[#FD6F2F] transition">
               <Linkedin size={24} />
             </a>
-            <a href="https://www.instagram.com/UP LIFT PLACEMENTS.placement" target="_blank" rel="noopener noreferrer" className="text-[#515739] hover:text-[#FD6F2F] transition">
+            <a href="https://www.instagram.com/upliftplacements?igsh=MWVsOTBodjZrOTRqMg==" target="_blank" rel="noopener noreferrer" className="text-[#515739] hover:text-[#FD6F2F] transition">
               <Instagram size={24} />
             </a>
           </div>

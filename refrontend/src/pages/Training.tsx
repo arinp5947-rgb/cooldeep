@@ -58,7 +58,7 @@ const Training = () => {
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold text-[#2F3E2E] mb-6">Professional IT Training Programs</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                UP LIFT PLACEMENTS offers comprehensive training programs designed to enhance your technical skills and prepare you for success in the competitive IT industry.
+                UpLift Placements offers comprehensive training programs designed to enhance your technical skills and prepare you for success in the competitive IT industry.
               </p>
               <ul className="space-y-4 text-gray-700 leading-relaxed">
                 <li className="flex items-start">

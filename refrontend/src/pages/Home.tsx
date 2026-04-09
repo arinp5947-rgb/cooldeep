@@ -86,11 +86,11 @@ const Home = () => {
   ]
 
   const testimonials = [
-    { name: 'Rajesh Kumar', role: 'Senior Software Engineer', content: 'UP LIFT PLACEMENTS team has been exceptional in understanding my career goals. Their professional approach and constant support made my job search journey smooth and successful.', img: 'Enock-Brookins.png', gender: 'male' },
-    { name: 'Priya Sharma', role: 'Business Analyst', content: 'The team at UP LIFT PLACEMENTS exceeded my expectations. They were responsive, professional, and helped me land my dream job. Highly recommend their services!', img: 'Priya-Patel.png', gender: 'female' },
-    { name: 'Amit Patel', role: 'Project Manager', content: 'Working with UP LIFT PLACEMENTS was a game-changer for my career. Their expertise and dedication in finding the right opportunity for me was truly impressive.', img: 'Enock-Brookins.png', gender: 'male' },
-    { name: 'Sneha Reddy', role: 'Data Scientist', content: 'I am grateful to UP LIFT PLACEMENTS for their excellent guidance and support. They understood my requirements perfectly and connected me with the right opportunities.', img: 'Priya-Patel.png', gender: 'female' },
-    { name: 'Vikram Singh', role: 'DevOps Engineer', content: 'The professionalism and commitment shown by UP LIFT PLACEMENTS team is commendable. They made the entire placement process seamless and stress-free.', img: 'Enock-Brookins.png', gender: 'male' }
+    { name: 'Rajesh Kumar', role: 'Senior Software Engineer', content: 'UpLift Placements team has been exceptional in understanding my career goals. Their professional approach and constant support made my job search journey smooth and successful.', img: 'Enock-Brookins.png', gender: 'male' },
+    { name: 'Priya Sharma', role: 'Business Analyst', content: 'The team at UpLift Placements exceeded my expectations. They were responsive, professional, and helped me land my dream job. Highly recommend their services!', img: 'Priya-Patel.png', gender: 'female' },
+    { name: 'Amit Patel', role: 'Project Manager', content: 'Working with UpLift Placements was a game-changer for my career. Their expertise and dedication in finding the right opportunity for me was truly impressive.', img: 'Enock-Brookins.png', gender: 'male' },
+    { name: 'Sneha Reddy', role: 'Data Scientist', content: 'I am grateful to UpLift Placements for their excellent guidance and support. They understood my requirements perfectly and connected me with the right opportunities.', img: 'Priya-Patel.png', gender: 'female' },
+    { name: 'Vikram Singh', role: 'DevOps Engineer', content: 'The professionalism and commitment shown by UpLift Placements team is commendable. They made the entire placement process seamless and stress-free.', img: 'Enock-Brookins.png', gender: 'male' }
   ]
 
   return (
@@ -141,9 +141,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <p className="text-[#FD6F2F] font-semibold mb-2 text-base">UP LIFT PLACEMENTS</p>
+              <p className="text-[#FD6F2F] font-semibold mb-2 text-base">UpLift Placements</p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#2F3E2E] mb-6">Services</h2>
-              <p className="text-gray-600 mb-6 text-base leading-relaxed">UP LIFT PLACEMENTS provides a holistic range of IT services. From job placement and career guidance to interview support, training, and staffing solutions, we're your partners in every step of your IT journey.</p>
+              <p className="text-gray-600 mb-6 text-base leading-relaxed">UpLift Placements provides a holistic range of IT services. From job placement and career guidance to interview support, training, and staffing solutions, we're your partners in every step of your IT journey.</p>
               <img src="/services.jpg" alt="Services" className="w-full rounded-lg shadow-lg" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none' }} />
             </motion.div>
             <div className="grid grid-cols-2 gap-4 md:gap-6">
@@ -168,7 +168,7 @@ const Home = () => {
         <div className="relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-10 md:mb-16">
-              <p className="text-base md:text-lg mb-2">Trust Your Career Journey to UP LIFT PLACEMENTS</p>
+              <p className="text-base md:text-lg mb-2">Trust Your Career Journey to UpLift Placements</p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Why Choose Us?</h2>
             </motion.div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
@@ -193,8 +193,8 @@ const Home = () => {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-gradient-to-br from-[#FFEAD1] to-white p-8 md:p-10 rounded-2xl">
               <p className="text-[#FD6F2F] font-semibold mb-2 text-base">What we do?</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#2F3E2E] mb-6">Let UP LIFT PLACEMENTS, Find you the right job</h2>
-              <p className="text-gray-600 mb-4 text-base leading-relaxed">As the flagship of innovation in the placement industry, UP LIFT PLACEMENTS brings a distinct approach to the forefront. With a foundation deeply rooted in cutting-edge strategies, we specialize in delivering customized staffing solutions.</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#2F3E2E] mb-6">Let UpLift Placements, Find you the right job</h2>
+              <p className="text-gray-600 mb-4 text-base leading-relaxed">As the flagship of innovation in the placement industry, UpLift Placements brings a distinct approach to the forefront. With a foundation deeply rooted in cutting-edge strategies, we specialize in delivering customized staffing solutions.</p>
               <p className="text-gray-600 mb-6 text-base leading-relaxed">Our expertise thrives in connecting dynamic professionals across a spectrum of fields, from mid- to C-level executives, with their ideal career avenues.</p>
               <div className="flex gap-4">
                 <Link to="/contact" className="bg-[#FD6F2F] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Request a callback</Link>
@@ -211,7 +211,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-bold text-[#2F3E2E] mb-6">Success</h2>
-              <p className="text-gray-600 mb-8 text-base leading-relaxed">Since its establishment, UP LIFT PLACEMENTS has facilitated the successful placement of 870+ candidates, underscoring our proficiency in generating meaningful employment opportunities.</p>
+              <p className="text-gray-600 mb-8 text-base leading-relaxed">Since its establishment, UpLift Placements has facilitated the successful placement of 870+ candidates, underscoring our proficiency in generating meaningful employment opportunities.</p>
               <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 md:gap-4 mb-8">
                 {[
                   { year: '2021', count: stats.y2021 },
@@ -231,7 +231,7 @@ const Home = () => {
                 <div className="h-3 bg-gray-200 rounded-full overflow-hidden mb-2">
                   <div className="h-full bg-[#FD6F2F] transition-all duration-1000" style={{ width: `${stats.rate}%` }}></div>
                 </div>
-                <p className="text-gray-600 text-sm">UP LIFT PLACEMENTS has achieved a {stats.rate}% placement success rate since the start of its operations.</p>
+                <p className="text-gray-600 text-sm">UpLift Placements has achieved a {stats.rate}% placement success rate since the start of its operations.</p>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -265,7 +265,7 @@ const Home = () => {
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <p className="text-[#FD6F2F] font-semibold mb-2 text-base">About Company</p>
               <h2 className="text-2xl md:text-3xl font-bold text-[#2F3E2E] mb-6">Let us be your trusted partner</h2>
-              <p className="text-gray-600 mb-6 text-base leading-relaxed">UP LIFT PLACEMENTS stands out as a premier job-seeking service, distinguished by our extensive nationwide searches within the United States. Our mission is to identify the most suitable candidates for a wide range of job roles.</p>
+              <p className="text-gray-600 mb-6 text-base leading-relaxed">UpLift Placements stands out as a premier job-seeking service, distinguished by our extensive nationwide searches within the United States. Our mission is to identify the most suitable candidates for a wide range of job roles.</p>
               <Link to="/about" className="inline-block bg-[#FD6F2F] text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Read More</Link>
             </motion.div>
           </div>
