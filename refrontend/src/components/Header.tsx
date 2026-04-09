@@ -12,20 +12,20 @@ const Header = () => {
     <>
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#515739] shadow-md">
       {/* Top Bar */}
-      <div className="bg-[#2F3E2E] text-white py-2">
+      <div className="bg-[#2F3E2E] text-white py-1.5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <a href="https://www.linkedin.com/company/uplift-placement/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
-              <Linkedin size={18} />
+              <Linkedin size={16} />
             </a>
             <a href="https://www.instagram.com/upliftplacements?igsh=MWVsOTBodjZrOTRqMg==" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
-              <Instagram size={18} />
+              <Instagram size={16} />
             </a>
             <a href="mailto:service@upliftplacements.com" className="hover:text-[#FD6F2F] transition">
-              <Mail size={18} />
+              <Mail size={16} />
             </a>
             <a href="tel:+919664361260" className="hover:text-[#FD6F2F] transition">
-              <Phone size={18} />
+              <Phone size={16} />
             </a>
           </div>
         </div>
@@ -33,10 +33,10 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="bg-[#515739]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
-              <img src="/images/logo.svg" alt="UP LIFT PLACEMENTS" className="h-14 md:h-16" />
+              <img src="/images/logo-final.png" alt="UpLift Placements" className="h-12 md:h-14 w-auto" />
             </Link>
 
             {/* Desktop Menu */}
@@ -180,7 +180,7 @@ const Header = () => {
     <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-[70] transform transition-transform duration-300 ${sidePanelOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       <div className="p-6">
         <div className="flex justify-between items-center mb-6">
-          <img src="/images/logo.svg" alt="UP LIFT PLACEMENTS" className="h-12" />
+          <img src="/images/logo-final.png" alt="UpLift Placements" className="h-10 w-auto" />
           <button onClick={() => setSidePanelOpen(false)} className="text-gray-600 hover:text-[#FD6F2F]">
             <X size={24} />
           </button>

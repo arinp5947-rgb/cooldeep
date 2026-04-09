@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <img src="/images/logo.svg" alt="UP LIFT PLACEMENTS" className="h-12 mb-4" />
+            <img src="/images/logo-final.png" alt="UpLift Placements" className="h-12 mb-4" />
             <p className="text-gray-300 mb-4 text-sm leading-relaxed">
               For the past two-plus years, UpLift Placements LLC is a tech employment firm connecting candidates and clients.
             </p>

@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow pt-[120px]">
+        <main className="flex-grow pt-[80px]">
           <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#FD6F2F]"></div></div>}>
             <Routes>
               <Route path="/" element={<Home />} />
