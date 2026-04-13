@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#515739] shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F3] shadow-md">
       {/* Top Bar */}
       <div className="bg-[#2F3E2E] text-white py-1.5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +21,7 @@ const Header = () => {
             <a href="https://www.instagram.com/upliftplacements?igsh=MWVsOTBodjZrOTRqMg==" target="_blank" rel="noopener noreferrer" className="hover:text-[#FD6F2F] transition">
               <Instagram size={16} />
             </a>
-            <a href="mailto:service@upliftplacements.com" className="hover:text-[#FD6F2F] transition">
+            <a href="mailto:upliftplacements@gmail.com" className="hover:text-[#FD6F2F] transition">
               <Mail size={16} />
             </a>
             <a href="tel:+919664361260" className="hover:text-[#FD6F2F] transition">
@@ -32,7 +32,7 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-[#515739]">
+      <nav className="bg-[#FAF8F3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
@@ -41,13 +41,13 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-10">
-              <Link to="/" className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
+              <Link to="/" className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
                 Home
               </Link>
               
               {/* Our Services Dropdown */}
               <div className="relative group">
-                <button className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide flex items-center gap-1">
+                <button className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide flex items-center gap-1">
                   Our Services
                   <ChevronDown size={16} />
                 </button>
@@ -66,7 +66,7 @@ const Header = () => {
 
               {/* Specialities Dropdown */}
               <div className="relative group">
-                <button className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide flex items-center gap-1">
+                <button className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide flex items-center gap-1">
                   Specialities
                   <ChevronDown size={16} />
                 </button>
@@ -83,18 +83,18 @@ const Header = () => {
                 </div>
               </div>
 
-              <Link to="/about" className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
+              <Link to="/about" className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
                 About Us
               </Link>
-              <Link to="/refer-and-earn" className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
+              <Link to="/refer-and-earn" className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
                 Refer and Earn
               </Link>
-              <Link to="/contact" className="text-white hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
+              <Link to="/contact" className="text-[#2F3E2E] hover:text-[#FD6F2F] transition font-semibold text-base tracking-wide">
                 Contact Us
               </Link>
               
               {/* Hamburger for side panel on desktop */}
-              <button onClick={() => setSidePanelOpen(true)} className="text-white hover:text-[#FD6F2F] transition">
+              <button onClick={() => setSidePanelOpen(true)} className="text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                 <Menu size={28} strokeWidth={2} />
               </button>
             </div>
@@ -102,7 +102,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="lg:hidden text-white z-50 p-2 hover:bg-[#FD6F2F] rounded transition"
+              className="lg:hidden text-[#2F3E2E] z-50 p-2 hover:bg-[#FD6F2F] rounded transition"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={32} strokeWidth={2.5} /> : <Menu size={32} strokeWidth={2.5} />}
@@ -206,8 +206,8 @@ const Header = () => {
               Suite 510, 350 Fifth Avenue,<br />
               New York, NY 10118, United States
             </p>
-            <a href="mailto:service@upliftplacements.com" className="text-[#FD6F2F] hover:underline text-sm">
-              service@upliftplacements.com
+            <a href="mailto:upliftplacements@gmail.com" className="text-[#FD6F2F] hover:underline text-sm">
+              upliftplacements@gmail.com
             </a>
           </div>
 
