@@ -111,25 +111,25 @@ const Header = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="lg:hidden mt-4 pb-4">
-              <Link to="/" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+            <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
+              <Link to="/" onClick={() => setIsOpen(false)} className="block py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition border-b border-gray-100">
                 Home
               </Link>
               
               <div>
-                <button onClick={() => setServicesOpen(!servicesOpen)} className="w-full text-left py-2 text-white hover:text-[#FD6F2F] transition flex items-center justify-between">
+                <button onClick={() => setServicesOpen(!servicesOpen)} className="w-full text-left py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition flex items-center justify-between border-b border-gray-100">
                   Our Services
                   <ChevronDown size={16} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {servicesOpen && (
-                  <div className="pl-4">
-                    <Link to="/recruitment-interview-process" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                  <div className="pl-4 bg-gray-50">
+                    <Link to="/recruitment-interview-process" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       Recruitment & Interview process
                     </Link>
-                    <Link to="/it-job-placement" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                    <Link to="/it-job-placement" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       IT Job Placement
                     </Link>
-                    <Link to="/career-guidance" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                    <Link to="/career-guidance" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       Career Guidance
                     </Link>
                   </div>
@@ -137,32 +137,32 @@ const Header = () => {
               </div>
 
               <div>
-                <button onClick={() => setSpecialitiesOpen(!specialitiesOpen)} className="w-full text-left py-2 text-white hover:text-[#FD6F2F] transition flex items-center justify-between">
+                <button onClick={() => setSpecialitiesOpen(!specialitiesOpen)} className="w-full text-left py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition flex items-center justify-between border-b border-gray-100">
                   Specialities
                   <ChevronDown size={16} className={`transition-transform ${specialitiesOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {specialitiesOpen && (
-                  <div className="pl-4">
-                    <Link to="/interview-support" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                  <div className="pl-4 bg-gray-50">
+                    <Link to="/interview-support" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       Interview Support
                     </Link>
-                    <Link to="/training" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                    <Link to="/training" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       Training
                     </Link>
-                    <Link to="/staffing" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+                    <Link to="/staffing" onClick={() => setIsOpen(false)} className="block py-2 text-[#2F3E2E] hover:text-[#FD6F2F] transition">
                       Staffing
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link to="/about" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+              <Link to="/about" onClick={() => setIsOpen(false)} className="block py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition border-b border-gray-100">
                 About Us
               </Link>
-              <Link to="/refer-and-earn" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+              <Link to="/refer-and-earn" onClick={() => setIsOpen(false)} className="block py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition border-b border-gray-100">
                 Refer and Earn
               </Link>
-              <Link to="/contact" onClick={() => setIsOpen(false)} className="block py-2 text-white hover:text-[#FD6F2F] transition">
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="block py-3 text-[#2F3E2E] hover:text-[#FD6F2F] font-semibold transition">
                 Contact Us
               </Link>
             </div>
