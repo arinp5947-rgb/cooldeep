@@ -1,11 +1,28 @@
 const { pool } = require('../db')
 const { sendContactEmail, sendReferralEmail } = require('../emailService')
 
+function sanitize(str) {
+  if (!str) return ''
+  return String(str).trim().replace(/[<>]/g, '')
+}
+
 async function submitContact(req, res) {
-  const { name, email, phone, subject, message } = req.body
+  const name = sanitize(req.body.name)
+  const email = sanitize(req.body.email)
+  const phone = sanitize(req.body.phone)
+  const subject = sanitize(req.body.subject)
+  const message = sanitize(req.body.message)
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Name, email and message are required' })
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.status(400).json({ error: 'Invalid email address' })
+  }
+
+  if (name.length > 100 || message.length > 2000) {
+    return res.status(400).json({ error: 'Input too long' })
   }
 
   try {
@@ -24,10 +41,19 @@ async function submitContact(req, res) {
 }
 
 async function submitReferral(req, res) {
-  const { referrerName, referrerEmail, referrerPhone, refereeName, refereeEmail, refereePhone } = req.body
+  const referrerName = sanitize(req.body.referrerName)
+  const referrerEmail = sanitize(req.body.referrerEmail)
+  const referrerPhone = sanitize(req.body.referrerPhone)
+  const refereeName = sanitize(req.body.refereeName)
+  const refereeEmail = sanitize(req.body.refereeEmail)
+  const refereePhone = sanitize(req.body.refereePhone)
 
   if (!referrerName || !referrerEmail || !refereeName || !refereeEmail) {
     return res.status(400).json({ error: 'Referrer and candidate name/email are required' })
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(referrerEmail) || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(refereeEmail)) {
+    return res.status(400).json({ error: 'Invalid email address' })
   }
 
   try {
